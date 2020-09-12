@@ -1,2 +1,2 @@
 # react-app-poc
-React POC using Webpack and Babel
+ReactJS POC using Webpack and Babel
