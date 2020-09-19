@@ -1,4 +1,5 @@
 import React, { Component } from 'react';  
+import ReactDOM from 'react-dom';  
 class RenderUi extends Component{  
    render(){  
       return(  
@@ -11,5 +12,8 @@ class RenderUi extends Component{
       );  
    }  
 }  
-export default RenderUi; 
+function updateUi() {
+   ReactDOM.render(<RenderUi />, document.getElementById('renderUi'));
+} 
+setInterval(updateUi, 1000);
   
