@@ -1,18 +1,14 @@
 import React from 'react';  
 import ReactDOM from 'react-dom';  
 import App from './App.js';  
-  
+import RenderUi from './Topics/RenderUi';
+
+// Hello World!
 ReactDOM.render(<App />, document.getElementById('app'));  
 
-function tick() {
-    const element = (
-      <div>
-        <h1>Hello, world!</h1>
-        <h2>It is {new Date().toLocaleTimeString()}.</h2>
-      </div>
-    );
-    ReactDOM.render(element, document.getElementById('root'));
-  }
-  
-  setInterval(tick, 1000);
+// Rendering Ui Components
+function updateUi() {
+     ReactDOM.render(<RenderUi />, document.getElementById('renderUi'));
+ } 
+ setInterval(updateUi, 1000);
 

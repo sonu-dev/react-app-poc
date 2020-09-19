@@ -43,6 +43,10 @@ ReactDOM.render(element, document.getElementById('root'));
 setInterval(tick, 1000);
 </code>  
 
+## React Only Updates What’s Necessary
+React DOM compares the element and its children to the previous one, and only applies the DOM updates necessary to bring the DOM to the desired state.
+
+
 # Resources
 
 https://reactjs.org/docs/getting-started.html
